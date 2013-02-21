@@ -1,0 +1,250 @@
+2013-02-21 11:17:21 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:17:21 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:17:22 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:17:23 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:48 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:48 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:49 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:49 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:49 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:50 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:50 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:50 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:50 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:51 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:51 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:51 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:18:51 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:25 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:25 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:26 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:27 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:55 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:56 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:56 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-02-21 11:19:57 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PST/-8.0/no DST' instead
+Stack Trace:
+#0 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(1025): DateTime->__construct('2013-02-07 12:3...')
+#1 /Users/gwalsher/Sites/applitab/lib/Cake/Network/CakeResponse.php(929): CakeResponse->_getUTCDate(1360269557)
+#2 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1360269557)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /Users/gwalsher/Sites/applitab/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Users/gwalsher/Sites/applitab/lib/Cake/Routing/Dispatcher.php(141): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Users/gwalsher/Sites/applitab/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
