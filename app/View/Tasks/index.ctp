@@ -1,5 +1,4 @@
-<?php
-/*
+<!--
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -11,29 +10,27 @@
  * @package       app.Model
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-class ProjectsController extends AppController 
-{
-public $helpers = array('Html', 'Form');
-
-public function index() 
-{
-	$this->set('projects', $this->Project->find('all'));
-}
-
-public function view($id = null)
-{
-	if (!$id) 
-	{
-		throw new NotFoundException(__('Invalid project'));
-	}
-	$project = $this->Project->findById($id);
-
-	if (!$project) 
-	{
-		throw new NotFoundException(__('Invalid project'));
-	}
-	$this->set('project', $project);
-}
-}
-?>
+ */-->
+<!-- File: /app/View/Tasks/index.ctp -->
+<h1>Tasks</h1>
+<table>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Description</th>
+</tr>
+<!-- Here is where we loop through our $tasks array, printing out task info -->
+<?php foreach ($tasks as $task): ?>
+<tr>
+<td><?php echo $task['Task']['id']; ?></td>
+<td>
+<?php echo $this->Html->link($task['Task']['task_name'],
+array('controller' => 'tasks', 'action' => 'view', $task['Task']['id'])); ?>
+</td>
+<td>
+<?php echo $task['Task']['description'];?>
+</td>
+</tr>
+<?php endforeach; ?>
+<?php unset($task); ?>
+</table>

@@ -12,28 +12,28 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-class ProjectsController extends AppController 
+class ClientsController extends AppController 
 {
 public $helpers = array('Html', 'Form');
 
 public function index() 
 {
-	$this->set('projects', $this->Project->find('all'));
+	$this->set('clients', $this->Client->find('all'));
 }
 
 public function view($id = null)
 {
 	if (!$id) 
 	{
-		throw new NotFoundException(__('Invalid project'));
+		throw new NotFoundException(__('Invalid client'));
 	}
-	$project = $this->Project->findById($id);
+	$client = $this->Client->findById($id);
 
-	if (!$project) 
+	if (!$client) 
 	{
-		throw new NotFoundException(__('Invalid project'));
+		throw new NotFoundException(__('Invalid client'));
 	}
-	$this->set('project', $project);
+	$this->set('client', $client);
 }
 }
 ?>

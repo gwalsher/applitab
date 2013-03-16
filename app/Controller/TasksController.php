@@ -12,28 +12,28 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-class ProjectsController extends AppController 
+class TasksController extends AppController 
 {
 public $helpers = array('Html', 'Form');
 
 public function index() 
 {
-	$this->set('projects', $this->Project->find('all'));
+	$this->set('tasks', $this->Task->find('all'));
 }
 
 public function view($id = null)
 {
 	if (!$id) 
 	{
-		throw new NotFoundException(__('Invalid project'));
+		throw new NotFoundException(__('Invalid task'));
 	}
-	$project = $this->Project->findById($id);
+	$task = $this->Task->findById($id);
 
-	if (!$project) 
+	if (!$task) 
 	{
-		throw new NotFoundException(__('Invalid project'));
+		throw new NotFoundException(__('Invalid task'));
 	}
-	$this->set('project', $project);
+	$this->set('task', $task);
 }
 }
 ?>
