@@ -13,24 +13,40 @@
  */-->
 <!-- File: /app/View/Tasks/index.ctp -->
 <h1>Tasks</h1>
-<table>
-<tr>
-<th>Id</th>
-<th>Title</th>
-<th>Description</th>
-</tr>
+<table class = "table table-bordered">
+	<tr>
+		<td colspan = "5">
+			<a style = "float:right" href = "tasks/add"class = "btn btn-success">Add Task</a>
+		</td>
+	</tr>
+	<tr>
+		<th>Task name</th>
+		<th>Description</th>
+		<th>Status</th>
+		<th>Manage</th>
+	</tr>
 <!-- Here is where we loop through our $tasks array, printing out task info -->
-<?php foreach ($tasks as $task): ?>
-<tr>
-<td><?php echo $task['Task']['id']; ?></td>
-<td>
-<?php echo $this->Html->link($task['Task']['task_name'],
-array('controller' => 'tasks', 'action' => 'view', $task['Task']['id'])); ?>
-</td>
-<td>
-<?php echo $task['Task']['description'];?>
-</td>
-</tr>
-<?php endforeach; ?>
-<?php unset($task); ?>
+	<?php foreach ($tasks as $task): ?>
+	<tr>
+		<td>
+			<?php echo $this->Html->link($task['Task']['name'],
+			array('controller' => 'tasks', 'action' => 'view', $task['Task']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $task['Task']['description'];?>
+		</td>
+		<td>
+			<?php echo $task['Task']['status'];?>
+		</td>
+		<td>
+		<?php echo $this->Form->postLink(
+			'Delete',
+		array('action' => 'delete', $task['Task']['id']),
+		array('confirm' => 'Are you sure?'));
+		?>
+		<?php echo $this->Html->link('Edit', array('action' => 'edit', $task['Task']['id'])); ?>
+		</td>
+	</tr>
+	<?php endforeach; ?>
+	<?php unset($task); ?>
 </table>

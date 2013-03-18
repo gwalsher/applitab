@@ -56,7 +56,7 @@
               <li><a href="/pages/about_us">About Us</a></li>
               <li><a href="/pages/contact">Contact</a></li>
             </ul>
-            <button type="submit" class="btn">Sign in</button>
+            <a class="btn" href="/users/login">Sign in</a>
           </div><!--/.nav-collapse -->
         </div>
       </div>

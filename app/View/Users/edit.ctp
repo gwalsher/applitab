@@ -11,7 +11,19 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
-<!-- File: /app/View/Users/view.ctp -->
-<h1><?php echo "User: " . h($user['User']['name']); ?></h1>
-<p><small>ID: <?php echo $user['User']['id']; ?></small></p>
-<p><?php echo h($user['User']['email']); ?></p>
+<!-- File: /app/View/Users/edit.ctp -->
+<h1>Edit User</h1>
+<?php
+echo $this->Form->create('User');
+echo $this->Form->input('id', array('type' => 'hidden'));
+echo $this->Form->input('name');
+echo $this->Form->input('email');
+echo $this->Form->input('username');
+echo $this->Form->input('password');
+echo $this->Form->input('role', array(
+'options' => array('admin' => 'Admin', 'employee' => 'Employee')
+));
+echo $this->Form->input('hourly_wage');
+echo $this->Form->end('Save User');
+?>
+

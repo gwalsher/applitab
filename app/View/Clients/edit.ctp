@@ -11,7 +11,14 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
-<!-- File: /app/View/Users/view.ctp -->
-<h1><?php echo "User: " . h($user['User']['name']); ?></h1>
-<p><small>ID: <?php echo $user['User']['id']; ?></small></p>
-<p><?php echo h($user['User']['email']); ?></p>
+<!-- File: /app/View/Clients/edit.ctp -->
+<h1>Edit Client</h1>
+<?php
+echo $this->Form->create('Client');
+echo $this->Form->input('name');
+echo $this->Form->input('rep_name');
+echo $this->Form->input('phone');
+echo $this->Form->input('email');
+echo $this->Form->input('id', array('type' => 'hidden'));
+echo $this->Form->end('Save Client');
+?>

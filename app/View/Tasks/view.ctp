@@ -12,6 +12,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
 <!-- File: /app/View/Tasks/view.ctp -->
-<h1><?php echo h($task['Task']['task_name']); ?></h1>
+<h1><?php echo "Task: " . h($task['Task']['name']); ?></h1>
 <p><small>ID: <?php echo $task['Task']['id']; ?></small></p>
 <p><?php echo h($task['Task']['description']); ?></p>

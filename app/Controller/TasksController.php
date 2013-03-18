@@ -12,28 +12,67 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-class TasksController extends AppController 
-{
+class TasksController extends AppController {
 public $helpers = array('Html', 'Form');
 
-public function index() 
-{
+public function index() {
 	$this->set('tasks', $this->Task->find('all'));
 }
 
-public function view($id = null)
-{
-	if (!$id) 
-	{
+public function view($id = null) {
+	if (!$id) {
 		throw new NotFoundException(__('Invalid task'));
 	}
 	$task = $this->Task->findById($id);
 
-	if (!$task) 
-	{
+	if (!$task) {
 		throw new NotFoundException(__('Invalid task'));
 	}
 	$this->set('task', $task);
 }
+public function add() {
+	if ($this->request->is('add')) {
+	$this->Project->create();
+		if ($this->Task->save($this->request->data)) {
+			$this->Session->setFlash(__('The task has been saved'));
+			$this->redirect(array('action' => 'index'));
+	} else {
+		$this->Session->setFlash(__('The task could not be saved. Please, try again.'));
+		}
+	}	
+}
+
+public function delete($id) {
+	if ($this->request->is('get')) {
+		throw new MethodNotAllowedException();
+	}
+	if ($this->Task->delete($id)) {
+		$this->Session->setFlash('The ' . $name . 'task has been deleted.');
+		$this->redirect(array('action' => 'index'));
+	}
+}
+
+public function edit($id = null) {
+	if (!$id) {
+		throw new NotFoundException(__('Invalid task'));
+	}
+	$task = $this->Task->findById($id);
+	if (!$task) {
+		throw new NotFoundException(__('Invalid task'));
+	}
+	if ($this->request->is('task') || $this->request->is('put')) {
+		$this->Task->id = $id;
+		if ($this->Task->save($this->request->data)) {
+			$this->Session->setFlash('Your task has been updated.');
+			$this->redirect(array('action' => 'index'));
+		} else {
+			$this->Session->setFlash('Unable to update your task.');
+		}
+	}
+	if (!$this->request->data) {
+		$this->request->data = $task;
+	}
+}
+
 }
 ?>

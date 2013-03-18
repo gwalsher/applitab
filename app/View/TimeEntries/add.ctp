@@ -11,7 +11,17 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
-<!-- File: /app/View/Users/view.ctp -->
-<h1><?php echo "User: " . h($user['User']['name']); ?></h1>
-<p><small>ID: <?php echo $user['User']['id']; ?></small></p>
-<p><?php echo h($user['User']['email']); ?></p>
+<!-- app/View/TimeEntries/add.ctp -->
+<div class="timeEntries form">
+<?php echo $this->Form->create('TimeEntry'); ?>
+<fieldset>
+<legend><?php echo __('Add Time Entry'); ?></legend>
+<?php echo $this->Form->input('name');
+echo $this->Form->input('rep_name');
+echo $this->Form->input('phone');
+echo $this->Form->input('email');
+echo $this->Form->input('address');
+?>
+</fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
+</div>

@@ -11,42 +11,42 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
-<!-- File: /app/View/Clients/index.ctp -->
-<h1>Clients</h1>
+<!-- File: /app/View/Users/index.ctp -->
+<h1>Users</h1>
 <table class = "table table-bordered">
 	<tr>
 		<td colspan = "4">
-			<a style="float:right" href = "clients/add"class = "btn btn-success">Add Client</a>
+			<a style="float:right" href = "users/add"class = "btn btn-success">Add User</a>
 		</td>
 	</tr>
 	<tr>
-		<th>Client name</th>
-		<th>Phone</th>
-		<th>Representative</th>
+		<th>Username</th>
+		<th>Role</th>
+		<th>Hourly wage</th>
 		<th>Manage</th>
 	</tr>
-<!-- Here is where we loop through our $clients array, printing out client info -->
-	<?php foreach ($clients as $client): ?>
+<!-- Here is where we loop through our $users array, printing out user info -->
+	<?php foreach ($users as $user): ?>
 	<tr>
 		<td>
-			<?php echo $this->Html->link($client['Client']['name'],
-			array('controller' => 'clients', 'action' => 'view', $client['Client']['id'])); ?>
+			<?php echo $this->Html->link($user['User']['name'],
+			array('controller' => 'users', 'action' => 'view', $user['User']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $client['Client']['phone']; ?>
+			<?php echo $user['User']['role']; ?>
 		</td>
 		<td>
-			<?php echo $client['Client']['rep_name'];?>
+			<?php echo $user['User']['hourly_wage'];?>
 		</td>
 		<td>
 			<?php echo $this->Form->postLink(
 			'Delete',
-			array('action' => 'delete', $client['Client']['id']),
+			array('action' => 'delete', $user['User']['id']),
 			array('confirm' => 'Are you sure?'));
 			?>
-			<?php echo $this->Html->link('Edit', array('action' => 'edit', $client['Client']['id'])); ?>
+			<?php echo $this->Html->link('Edit', array('action' => 'edit', $user['User']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
-<?php unset($client); ?>
+<?php unset($user); ?>
 </table>

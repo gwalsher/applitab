@@ -49,12 +49,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Applitab</a>
+          <a class="brand" href="/">Applitab</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#Clients">Clients</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#tasks">Tasks</a></li>
+              <li><a href="/users">Users</a></li>
+              <li><a href="/clients">Clients</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/tasks">Tasks</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

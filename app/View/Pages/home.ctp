@@ -17,7 +17,6 @@
         <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
       </div>
 
-      <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
           <h2>Clients</h2>
