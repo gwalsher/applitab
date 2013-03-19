@@ -13,7 +13,7 @@
  */-->
 <!--file app/Views/Users/login.ctp-->
 <div class="users form">
-<?php $this->layout = 'public'; ?>
+<?php $this->layout = 'default'; ?>
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User'); ?>
 <fieldset>

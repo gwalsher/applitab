@@ -13,6 +13,38 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class Client extends AppModel {	
+	public $validate = array(
+	'name' => array(
+		'required' => array(
+			'rule' => array('notEmpty'),
+			'message' => 'A name is required'
+		)
+	),
+	'rep_name' => array(
+		'required' => array(
+			'rule' => array('notEmpty'),
+			'message' => 'Client representative name is required'
+		)
+	),
+	'phone' => array(
+		'required' => array(
+			'rule' => array('notEmpty'),
+			'message' => 'A phone number is required'
+		)
+	),
+	'email' => array(
+		'required' => array(
+			'rule' => array('notEmpty'),
+			'message' => 'An email address is required'
+		)
+	),
+	'address' => array(
+		'required' => array(
+			'rule' => array('notEmpty'),
+			'message' => 'An address is required'
+		)
+	),
+);
 
 }
 ?>

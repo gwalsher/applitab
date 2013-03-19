@@ -13,10 +13,10 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class UsersController extends AppController {
-public function beforeFilter() {
-	parent::beforeFilter();
-	$this->Auth->allow('add');
-}
+	public function beforeFilter() {
+		parent::beforeFilter();
+		//$this->Auth->allow('add');
+	}
 public function index() {
 	$this->User->recursive = 0;
 	$this->set('users', $this->paginate());

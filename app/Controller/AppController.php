@@ -47,9 +47,19 @@ class AppController extends Controller {
 			'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
 		)
 		);
-		public function beforeFilter() 
-		{
-			$this->Auth->allow('pages');
+	public function beforeFilter() {
+
+		if ($this->params['controller'] == 'pages') {
+			$this->Auth->allow('*');
 		}
+		if ($this->params['controller'] == 'users') {
+			$this->Auth->allow('add');
+		}
+		if($this->params['controller'] == 'clients') {
+			$this->Auth->allow('index');
+		}
+	}
+	
+
 }
 ?>
