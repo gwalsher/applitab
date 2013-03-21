@@ -1,0 +1,47 @@
+Applitab Fucntionality 
+
+Users
+	functioning:
+		add users
+		edit users
+		delete users
+
+
+	not functioning:
+		associations 
+
+
+Clients
+	functioning:
+		add clients
+		edit clients 
+		delete clients
+
+
+	not functioning:
+		associations
+
+
+Projects
+	functioning:
+		add projects
+		edit projects
+
+	not functioning:
+		associations
+		delete clients
+
+Tasks 
+	functioning:
+		edit task
+		delete task
+
+	not functioning:
+		add task
+
+
+Time Entries 
+	functioning:
+
+
+	not functioning:

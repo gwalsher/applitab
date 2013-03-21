@@ -12,6 +12,27 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
 <!-- File: /app/View/Users/view.ctp -->
-<h1><?php echo "User: " . h($user['User']['name']); ?></h1>
-<p><small>ID: <?php echo $user['User']['id']; ?></small></p>
-<p><?php echo h($user['User']['email']); ?></p>
+<h1><?php echo "User: " . $user['User']['name']; ?></h1>
+<table class = "table table-bordered">
+	<tr>
+		<th>Username</th>
+		<th>Email</th>
+		<th>Role</th>
+		<th>Hourly wage</th>
+		<th>Manage</th>
+	</tr>
+	<tr>
+		<td><?php echo $user['User']['username']; ?></td>
+		<td><?php echo $user['User']['email']; ?></td>
+		<td><?php echo $user['User']['role']; ?></td>
+		<td><?php echo $user['User']['hourly_wage']; ?></td>
+		<td>
+			<?php echo $this->Form->postLink(
+			'Delete',
+			array('action' => 'delete', $user['User']['id']),
+			array('confirm' => 'Are you sure?'));
+			?>
+			<?php echo $this->Html->link('Edit', array('action' => 'edit', $user['User']['id'])); ?>
+		</td>
+	</tr>
+</table>

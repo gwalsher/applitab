@@ -30,7 +30,7 @@
 	<tr>
 		<td>
 			<?php echo $this->Html->link($project['Project']['name'],
-			array('controller' => 'projects', 'action' => 'view', $project['Project']['name'])); ?>
+			array('controller' => 'projects', 'action' => 'view', $project['Project']['id'])); ?>
 		</td>
 		<td>
 			<?php echo $project['Project']['description'];?>

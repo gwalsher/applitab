@@ -12,6 +12,24 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
 <!-- File: /app/View/Tasks/view.ctp -->
-<h1><?php echo "Task: " . h($task['Task']['name']); ?></h1>
-<p><small>ID: <?php echo $task['Task']['id']; ?></small></p>
-<p><?php echo h($task['Task']['description']); ?></p>
+<h1><?php echo "Task: " . $task['Task']['name']; ?></h1>
+<table class = "table table-bordered">
+	<tr>
+		<th>Description</th>
+		<th>Status</th>
+		<th>Cost</th>
+		<th>Manage</th>
+	</tr>
+	<tr>
+		<td><?php echo $task['Task']['description']; ?></td>
+		<td><?php echo $task['Task']['status']; ?></td>
+		<td><?php echo $task['Task']['task_cost']; ?></td>
+		<td>
+			<?php echo $this->Form->postLink(
+			'Delete',
+			array('action' => 'delete', $task['Task']['id']),
+			array('confirm' => 'Are you sure?'));
+			?>
+			<?php echo $this->Html->link('Edit', array('action' => 'edit', $task['Task']['id'])); ?>
+		</td>
+	</tr>

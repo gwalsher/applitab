@@ -1,0 +1,20 @@
+1. Project
+	belongsTo Client
+	hasMany Tasks
+	hasManyAndBelongsTo Users
+
+2. Client
+
+
+3. Users
+	hasManyAndBelongsTo Projects
+	hasMany Time Entries
+
+	
+4. Tasks
+	belongsTo project
+	hasMany Time Entries
+
+5. Time Entries
+	belongsTo User
+

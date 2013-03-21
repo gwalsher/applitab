@@ -13,6 +13,7 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class Client extends AppModel {	
+	
 	public $validate = array(
 	'name' => array(
 		'required' => array(

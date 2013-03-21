@@ -43,8 +43,8 @@ class AppController extends Controller {
 	public $components = array(
 		'Session',
 		'Auth' => array(
-			'loginRedirect' => array('controller' => 'clients', 'action' => 'index'),
-			'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
+			'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+			'logoutRedirect' => array('controller' => 'users', 'action' => 'login')
 		)
 		);
 	public function beforeFilter() {
@@ -53,10 +53,7 @@ class AppController extends Controller {
 			$this->Auth->allow('*');
 		}
 		if ($this->params['controller'] == 'users') {
-			$this->Auth->allow('add');
-		}
-		if($this->params['controller'] == 'clients') {
-			$this->Auth->allow('index');
+			$this->Auth->allow('login');
 		}
 	}
 	

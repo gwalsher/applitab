@@ -64,8 +64,8 @@
     </div>
 
     <div class="container">
-    	<!--this is where view content will display--> 
-    	<?php echo $content_for_layout ?>
+      <!--this is where view content will display--> 
+      <?php echo $content_for_layout ?>
 
     </div> <!-- /container -->
 
