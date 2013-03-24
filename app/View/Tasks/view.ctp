@@ -33,3 +33,41 @@
 			<?php echo $this->Html->link('Edit', array('action' => 'edit', $task['Task']['id'])); ?>
 		</td>
 	</tr>
+</table>
+<h2>Time Entries</h2>
+<?php if(empty($task['TimeEntry'])): ?>
+	<p>There are no time entries for this project yet</p>
+<?php else: ?>
+<table class = "table table-bordered">
+	<tr>
+		<th>User name</th>
+		<th>Hours</th>
+		<th>Description</th>
+		<th>Manage</th>
+	</tr>
+<!-- Here is where we loop through our $projects array, printing out task info -->
+	<?php foreach ($task['TimeEntry'] as $timeEntry): ?>
+	<tr>
+		<td>
+			<?php echo $this->Html->link($timeEntry['user_id'],
+			array('controller' => 'timeEntries', 'action' => 'view', $timeEntry['id'])); ?>
+		</td>
+		<td>
+			<?php echo $timeEntry['hours'];?>
+		</td>
+		<td>
+			<?php echo $timeEntry['description'];?>
+		</td>
+		<td>
+		<?php echo $this->Form->postLink(
+			'Delete',
+		array('controller' => 'tasks', 'action' => 'delete', $timeEntry['id']),
+		array('confirm' => 'Are you sure?'));
+		?>
+		<?php echo $this->Html->link('Edit', array('action' => 'edit', $timeEntry['id'])); ?>
+		</td>
+	</tr>
+	<?php endforeach; ?>
+</table>
+<?php endif; ?>
+<?php echo $this->Html->link('Add Time Entry', array('controller' => 'timeEntries', 'action' => 'add'), array('class' => 'btn btn-success')); ?>

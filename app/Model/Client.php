@@ -13,6 +13,12 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class Client extends AppModel {	
+
+	public $hasMany = array(
+		'Project' => array(
+			'className' => 'Project'
+			)
+		);
 	
 	public $validate = array(
 	'name' => array(

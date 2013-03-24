@@ -12,14 +12,17 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
 <!-- app/View/Tasks/add.ctp -->
+<?php //debug($projects); ?>
 <div class="tasks form">
 <?php echo $this->Form->create('Task'); ?>
 <fieldset>
 <legend><?php echo __('Add Task'); ?></legend>
-<?php echo $this->Form->input('name');
-echo $this->Form->input('description', array('rows' => 3));
-echo $this->Form->input('cost');
+<?php
 echo $this->Form->input('project_id');
+echo $this->Form->input('name');
+echo $this->Form->input('description', array('rows' => 3));
+echo $this->Form->input('status');
+echo $this->Form->input('cost');
 ?>
 </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

@@ -13,6 +13,11 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class TimeEntry extends AppModel {	
+	public $belongsTo = array(
+		'Task' => array(
+			'className' => 'Task'
+			)
+		);
 	
 }
 ?>

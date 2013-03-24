@@ -13,6 +13,16 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class Task extends AppModel {
+	public $belongsTo = array(
+		'Project' => array(
+			'className' => 'Project'
+			)
+		);
 	
+	public $hasMany = array(
+		'TimeEntry' => array(
+			'className' => 'TimeEntry'
+			)
+		);
 }
 ?>

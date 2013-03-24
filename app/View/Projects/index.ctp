@@ -12,10 +12,11 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */-->
 <!-- File: /app/View/Projects/index.ctp -->
+<?php //debug($project_list); ?>
 <h1>Projects</h1>
 <table class = "table table-bordered">
 	<tr>
-		<td colspan = "4">
+		<td colspan = "5">
 			<a style="float:right" href = "projects/add"class = "btn btn-success">Add Project</a>
 		</td>
 	</tr>
@@ -23,6 +24,7 @@
 		<th>Project name</th>
 		<th>Description</th>
 		<th>Cost</th>
+		<th>Client</th>
 		<th>Manage</th>
 	</tr>
 <!-- Here is where we loop through our $projects array, printing out project info -->
@@ -37,6 +39,9 @@
 		</td>
 		<td>
 			<?php echo $project['Project']['cost'];?>
+		</td>
+		<td>
+			<?php echo $project['Client']['name'];?>
 		</td>
 		<td>
 			<?php echo $this->Form->postLink(

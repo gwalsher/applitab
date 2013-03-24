@@ -13,6 +13,19 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class Project extends AppModel {	
+	var $actsAs = array('containable');
+
+	public $hasMany = array(
+		'Task' => array(
+			'className' => 'Task'
+			)
+		);
+
+	public $belongsTo = array(
+		'Client' => array(
+			'className' => 'Client'
+		)
+	);
 
 }
 ?>

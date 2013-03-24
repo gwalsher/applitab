@@ -31,24 +31,26 @@ public function view($id = null) {
 	$this->set('task', $task);
 }
 public function add() {
-	if ($this->request->is('add')) {
-	$this->Project->create();
+	if ($this->request->is('post')) {
+	$this->Task->create();
 		if ($this->Task->save($this->request->data)) {
 			$this->Session->setFlash(__('The task has been saved'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller' => 'projects', 'action' => 'view', $task['Project']['id']));
 	} else {
 		$this->Session->setFlash(__('The task could not be saved. Please, try again.'));
 		}
-	}	
+	}
+	$this->set('projects', $this->Task->Project->find('list'));
 }
 
 public function delete($id) {
 	if ($this->request->is('get')) {
 		throw new MethodNotAllowedException();
 	}
+	$task = $this->Task->findById($id);
 	if ($this->Task->delete($id)) {
 		$this->Session->setFlash('The ' . $name . 'task has been deleted.');
-		$this->redirect(array('action' => 'index'));
+		$this->redirect(array('controller' => 'projects', 'action' => 'view', $task['Project']['id']));
 	}
 }
 

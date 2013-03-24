@@ -23,7 +23,15 @@ public function view($id = null) {
 	if (!$id) {
 		throw new NotFoundException(__('Invalid project'));
 	}
+	$this->Project->contain(array('Client', 'Task'));
 	$project = $this->Project->findById($id);
+	// debug($project);
+	// $project = $this->Project->find('first', 
+	// 	array(
+	// 		'contain' => array('Client', 'Task'), 
+	// 		'conditions' => array('Project.id' => $id)
+	// 	)
+	// );
 
 	if (!$project) {
 		throw new NotFoundException(__('Invalid project'));
@@ -32,7 +40,7 @@ public function view($id = null) {
 }
 
 public function add() {
-	if ($this->request->is('add')) {
+	if ($this->request->is('post')) {
 	$this->Project->create();
 		if ($this->Project->save($this->request->data)) {
 			$this->Session->setFlash(__('The project has been saved'));
@@ -41,6 +49,7 @@ public function add() {
 		$this->Session->setFlash(__('The project could not be saved. Please, try again.'));
 		}
 	}
+	$this->set('clients', $this->Project->Client->find('list'));
 }
 
 public function delete($id) {

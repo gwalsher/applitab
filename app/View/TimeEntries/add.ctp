@@ -16,11 +16,12 @@
 <?php echo $this->Form->create('TimeEntry'); ?>
 <fieldset>
 <legend><?php echo __('Add Time Entry'); ?></legend>
-<?php echo $this->Form->input('name');
-echo $this->Form->input('rep_name');
-echo $this->Form->input('phone');
-echo $this->Form->input('email');
-echo $this->Form->input('address');
+<?php 
+echo $this->Form->input('task_id');
+echo $this->Form->input('hours');
+echo $this->Form->input('description', array('rows' => 3));
+echo $this->Form->input('entry_cost');
+echo $this->Form->input('user_id');
 ?>
 </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

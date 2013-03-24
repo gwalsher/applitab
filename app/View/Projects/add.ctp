@@ -16,10 +16,11 @@
 <?php echo $this->Form->create('Project'); ?>
 <fieldset>
 <legend><?php echo __('Add Project'); ?></legend>
-<?php echo $this->Form->input('name');
-echo $this->Form->input('description');
-echo $this->Form->input('cost');
+<?php 
 echo $this->Form->input('client_id');
+echo $this->Form->input('name');
+echo $this->Form->input('description', array('rows' => 3));
+echo $this->Form->input('cost');
 ?>
 </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
