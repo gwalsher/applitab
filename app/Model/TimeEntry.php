@@ -13,9 +13,13 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class TimeEntry extends AppModel {	
+
+	var $actAs = array('containable');
+
 	public $belongsTo = array(
 		'Task' => array(
-			'className' => 'Task'
+			'className' => 'Task', 
+			'dependent' => true
 			)
 		);
 	

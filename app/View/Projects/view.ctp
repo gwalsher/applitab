@@ -65,7 +65,7 @@
 		array('controller' => 'tasks', 'action' => 'delete', $task['id']),
 		array('confirm' => 'Are you sure?'));
 		?>
-		<?php echo $this->Html->link('Edit', array('action' => 'edit', $task['id'])); ?>
+		<?php echo $this->Html->link('Edit', array('controller' => 'tasks', 'action' => 'edit', $task['id'])); ?>
 		</td>
 	</tr>
 	<?php endforeach; ?>

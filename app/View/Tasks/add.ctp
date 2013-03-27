@@ -22,7 +22,7 @@ echo $this->Form->input('project_id');
 echo $this->Form->input('name');
 echo $this->Form->input('description', array('rows' => 3));
 echo $this->Form->input('status');
-echo $this->Form->input('cost');
+echo $this->Form->input('task_cost');
 ?>
 </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

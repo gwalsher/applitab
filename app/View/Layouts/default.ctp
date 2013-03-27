@@ -55,7 +55,6 @@
               <li><a href="/users">Users</a></li>
               <li><a href="/clients">Clients</a></li>
               <li><a href="/projects">Projects</a></li>
-              <li><a href="/tasks">Tasks</a></li>
             </ul>
             <a class="btn" href="/users/logout">Log out</a>
           </div><!--/.nav-collapse -->

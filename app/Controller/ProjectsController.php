@@ -44,7 +44,8 @@ public function add() {
 	$this->Project->create();
 		if ($this->Project->save($this->request->data)) {
 			$this->Session->setFlash(__('The project has been saved'));
-			$this->redirect(array('action' => 'index'));
+			$id = $this->Project->id;
+			$this->redirect(array('action' => 'view', $id));
 		} else {
 		$this->Session->setFlash(__('The project could not be saved. Please, try again.'));
 		}

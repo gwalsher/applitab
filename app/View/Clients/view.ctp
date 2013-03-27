@@ -38,7 +38,7 @@
 </table>
 <h2>Projects</h2>
 <?php if(empty($client['Project'])): ?>
-	<p>There are no tasks for this project yet</p>
+	<p>There are no projects for this client yet</p>
 <?php else: ?>
 <table class = "table table-bordered">
 	<tr>

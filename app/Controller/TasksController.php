@@ -35,7 +35,8 @@ public function add() {
 	$this->Task->create();
 		if ($this->Task->save($this->request->data)) {
 			$this->Session->setFlash(__('The task has been saved'));
-			$this->redirect(array('controller' => 'projects', 'action' => 'view', $task['Project']['id']));
+			$id = $this->Task->id;
+			$this->redirect(array('action' => 'view', $id));
 	} else {
 		$this->Session->setFlash(__('The task could not be saved. Please, try again.'));
 		}
@@ -48,7 +49,7 @@ public function delete($id) {
 		throw new MethodNotAllowedException();
 	}
 	$task = $this->Task->findById($id);
-	if ($this->Task->delete($id)) {
+	if ($this->Task->delete($id, true)) {
 		$this->Session->setFlash('The ' . $name . 'task has been deleted.');
 		$this->redirect(array('controller' => 'projects', 'action' => 'view', $task['Project']['id']));
 	}
@@ -66,7 +67,7 @@ public function edit($id = null) {
 		$this->Task->id = $id;
 		if ($this->Task->save($this->request->data)) {
 			$this->Session->setFlash('Your task has been updated.');
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('action' => 'view', $id));
 		} else {
 			$this->Session->setFlash('Unable to update your task.');
 		}

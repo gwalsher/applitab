@@ -46,6 +46,7 @@
 		<th>Manage</th>
 	</tr>
 <!-- Here is where we loop through our $projects array, printing out task info -->
+	<?php //debug($task);?>
 	<?php foreach ($task['TimeEntry'] as $timeEntry): ?>
 	<tr>
 		<td>
@@ -61,10 +62,10 @@
 		<td>
 		<?php echo $this->Form->postLink(
 			'Delete',
-		array('controller' => 'tasks', 'action' => 'delete', $timeEntry['id']),
+		array('controller' => 'timeEntries', 'action' => 'delete', $timeEntry['id']),
 		array('confirm' => 'Are you sure?'));
 		?>
-		<?php echo $this->Html->link('Edit', array('action' => 'edit', $timeEntry['id'])); ?>
+		<?php echo $this->Html->link('Edit', array('controller' => 'timeEntries', 'action' => 'edit', $timeEntry['id'])); ?>
 		</td>
 	</tr>
 	<?php endforeach; ?>
